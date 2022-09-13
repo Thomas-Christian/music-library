@@ -8,7 +8,7 @@ const Gallery = () => {
 
     
         return (
-            <div> 
+            <div style={{'display': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'center'}}> 
                 {data.map((item, i) => (
                     <GalleryItem item={ item } key={ i } />))
                 }
